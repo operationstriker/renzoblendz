@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="../Images/LogoIcon.png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand-title">𝙧𝙚𝙣𝙯𝙤𝙗𝙡𝙚𝙣𝙙𝙯</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Home/Home.html#AboutSection">About</a></li>
+                <li><a href="../Services/services.html">Services</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="Image">
+        <img src="../Images/ServiceBanner.png" id="GrayHome">
+        <p id="Servicetext" style="font-size: 5vw; color: white; font-family: Arial; font-weight: bold;" id="slogan">SERVICES</p>
+
+        <p style="font-size: 3vw; color: white; font-family: Arial; font-weight: bold; text-align: center;" id="slogan">FRESH CUTS START HERE</p>
+        <button id="AppointmentButton">Book Now</button>
+        <a href="../Home/Home.html#ContactSection">
+            <button id="ContactButton">Contact Us</button>
+        </a>
+      
+    </div>
+
+    <section id="ServiceSection">
+
+        <div id="ServicesDiv">
+            <img src="../Images/Haircut.png" class="ServicesImage">
+            <img src="../Images/BoyHaircut.png" class="ServicesImage">
+            <img src="../Images/Beard.png" class="ServicesImage">
+            <img src="../Images/DesignHaircut.png" class="ServicesImage">
+        </div>
+            <p id="P1" class="container">Haircut</p>
+            <p id="P2" class="container">Kid's Cut</p>
+            <p id="P3" class="container">Beard Trim</p>
+            <p id="P4" class="container">Design</p>
+            
+    </section>
+
+
+  
+</body>
+<script src="service.js"></script>
+</html>
+
+
+body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(24, 24, 24);
+}
+
+/*     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;     
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(24, 24, 24); */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    color: white;
+    background: transparent;
+}
+
+.brand-title {
+    font-size: 3rem;
+    margin: .5rem;
+    color:#1b9bff;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    color: #1b9bff;
+    background-color: #1b9bff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.Image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.IntroDiv {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+#GrayHome {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#ServiceSection {
+    height: 150px;
+}
+
+#Servicetext {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 4.4em;
+    color: white;
+}
+
+#ServicesDiv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 0;
+ }
+ 
+ .ServicesImage {
+     flex-wrap: wrap;
+     height: 20%;
+     width: 20%;
+     margin: 10px 0;
+     /* padding: 0 10px 10px; */
+ }
+ 
+ #P1 {
+    position: relative;
+    right: -3%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Arial;
+    color: white;
+    word-spacing: 1.5vw;
+} 
+
+/*  */
+
+#P2 {
+    position: relative;
+    left: 8%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Arial;
+    color: white;
+    word-spacing: 1.5vw;
+} 
+
+#P3 {
+    position: relative;
+    text-align: center;
+    left: 9%;
+    font-size: 4vw;
+    font-family: Arial;
+    color: white;
+} 
+
+#P4 {
+    position: relative;
+    left: 13%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Arial;
+    color: white;
+} 
+
+#slogan {
+    position: relative;
+    bottom: 50px;
+    margin: 0px;
+}
+ 
+.container {
+    position: relative;
+    bottom: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around; /* or start/end/center */
+    padding: 2vw;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#ContactButton {
+    position: relative;
+    bottom: 40px;
+    left: 33%;
+    height: 8%;
+    width: 20%;
+    border: 2px solid;
+    border-color: #ffffff;
+    box-shadow: 1px #1b9bff;
+    background: transparent;
+    color: white;
+    font-size: 2.9vw;
+    cursor: pointer;
+}
+
+#ContactButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#AppointmentButton {
+    position: relative;
+    bottom: 40px;
+    left: 30%;
+    height: 8%;
+    width: 20%;
+    border: 2px solid;
+    border-color: #1b9bff;
+    box-shadow: 1px #1b9bff;
+    background: transparent;
+    color: white;
+    font-size: 2.9vw;
+    cursor: pointer;
+}
+
+#AppointmentButton:hover {
+    background-color: #1b9bff;
+}
+
+@media (max-width: 480px) {
+    #AppointmentButton {
+        height: 5vh;
+        width: 20%;
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 640px) {
+    #AppointmentButton {
+        height: 6.5%;
+        width: 25%;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 728px) {
+    #AppointmentButton {
+        height: 7.4%;
+        width: 30%;
+        font-size: 2.7vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #AppointmentButton {
+        height: 8%;
+        width: 25%;
+        font-size: 3vw;
+    }
+}
+
+
+Home/index.html css
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    color: white;
+    background: transparent;
+}
+
+.brand-title {
+    font-size: 4vw;
+    margin: .5rem;
+    color:#1b9bff;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .brand-title {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .brand-title {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 728px) {
+    .brand-title {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brand-title {
+        font-size: 7vw;
+    }
+}
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    color: #1b9bff;
+    background-color: #1b9bff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    position: relative;
+    bottom:.5vh;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 530px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
