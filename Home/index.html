@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Home/Home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="icon" type="image/png" href="../Images/LogoIcon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 
+    Small smartphones max width (480px)
+    Large smartphones max width (640px)
+    Tablets max width (768px)
+    Laptops max width (1024px)
+    Desktops max width (1280px)
+      -->
+
+    <main>
+
+        <nav class="navbar">
+            <div class="brand-title">𝙧𝙚𝙣𝙯𝙤𝙗𝙡𝙚𝙣𝙙𝙯</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Home/index.html#AboutSection">About</a></li>
+                    <li><a href="../Services/index.html">Services</a></li>
+                    <li><a href="../Home/index.html#ContactSection">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="IntroDiv">
+            <img src="../Images/Home.png" id="HomeImage">
+
+            <p id="SloganText">FRESH CUTS <br>START HERE</p> 
+            <button id="AppointmentButton" onclick="Bookfunc()">Book Now</button>
+        </div>
+        
+        <section id="AboutSection">
+            <image src="../Images/Photo1 (1).jpg" id="AboutImage">
+            </image>
+
+            <p id = "AboutID"style="color: white; font-family: Arial;">ABOUT US</p>
+                    <p style="color: white; font-family: Arial;" id="AboutUsText">
+                        <br>
+                        Meet, <b>Lorenzo Kalavite</b>, 
+                        <br>The owner of renzoblendz<br>
+                        Lorenzo is a 16 year old barber in Springfield<br>
+                        Lorenzo is an extremely passionate barber<br>
+                        who has experience since 2021 at only 13
+                        </p> 
+                        
+        </section>
+        
+        <section id="ServiceSection">
+            <p id="ServicesTag"><b>SERVICES</b></p>
+
+            <div id="ServicesDiv">
+                <img src="../Images/Haircut.png" class="ServicesImage">
+                <img src="../Images/BoyHaircut.png" class="ServicesImage">
+                <img src="../Images/Beard.png" class="ServicesImage">
+                <img src="../Images/DesignHaircut.png" class="ServicesImage">
+            </div>
+                <p id="P1" class="container">Haircut</p>
+                <p id="P2" class="container">Kid's Cut</p>
+                <p id="P3" class="container">Beard Trim</p>
+                <p id="P4" class="container">Design</p>
+                
+        </section>
+
+        <section id="GallerySection">
+            <p style="font-family: Arial; font-weight: 700;" id="GalleryP">OUR GALLERY </p>
+
+            <div id="GalleryDiv">
+                <img src="../Images/1.png" class="InnerImages">
+                <img src="../Images/2.png" class="InnerImages">
+                <img src="../Images/3.png" class="InnerImages">
+                <img src="../Images/4.png" class="InnerImages">
+                <img src="../Images/9.png" class="InnerImages">
+                <img src="../Images/10.png" class="InnerImages">
+                <img src="../Images/5.png" class="InnerImages">
+                <img src="../Images/6.png" class="InnerImages">
+                <img src="../Images/7.png" class="InnerImages">
+                <img src="../Images/Photo1 (1).jpg" class="InnerImages" >
+            </div>
+        </section>
+
+        <section id="ContactSection">
+            <p style="font-weight: 700; font-family: Helvetica;" id="ContactTag">CONTACT US</p>
+            <p style="color:#1b9bff; font-family: Arial; font-weight: bold;" id="ContactInfo">
+                04491623147  @thenenzochanel@gmail.com</p>
+            <button class="contactbtns" onclick="instagramlink()">Instagram</button>
+            <button class="contactbtns" onclick="tiktoklink()">Tik Tok</button>
+            
+            <!-- <p style="color: white; font-family: Arial;">School Hours: MON-FRI CLOSED<br>School Hours: SAT-SUN 9:00AM - 3:00PM</p>
+            <p style="color: white; font-family: Arial;">School Holidays: MON-FRI 9:00AM - 3:00PM<br>School Holidays: MON-FRI 9:00AM - 3:00PM</p> -->
+
+            <form action= "https://api.web3forms.com/submit" method="POST">
+                <!-- <input type="hidden" name="access_key" value="ec6bcf35-eb80-42e9-b2cc-adbc9facf103"> -->
+                <input type="hidden" name="access_key" value="102ba84b-1d71-44f6-a179-f00fc14af9f4">
+                <input name = "name" id="NameInput" placeholder="Name" required>
+                <input name = "email" id="EmailInput" placeholder="Email" required>
+                <input name = "Message" id="MessageInput" placeholder="Send Message"></input required>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="footerlogotext" onclick="homefunction()">𝙧𝙚𝙣𝙯𝙤𝙗𝙡𝙚𝙣𝙙𝙯</p>
+        <a onclick="robert()" style="text-decoration: none; cursor: pointer;">
+            <p id="designtext">Web Design By Robert Orule</p>
+        </a>
+      
+    </footer>
+
+</body>
+<script src="Home.js"></script>
+</html>
