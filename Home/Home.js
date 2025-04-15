@@ -5,7 +5,7 @@ function homefunc() {
 }
 
 function Bookfunc() {
-    window.open("https://partners.fresha.com/dashboard")
+    window.open("https://www.fresha.com/a/renzoblendz-springfield-springfield-parkway-j5ra8m9u?pId=1480652")
 }
 
 
@@ -30,6 +30,9 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
+
+
+
 
 
 
