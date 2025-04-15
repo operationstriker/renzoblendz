@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="../Images/LogoIcon.png">
+</head>
+<body>
+
+    <div class="Image">
+        <img src="../Images/image.png" id="ContactImage">
+        <a href="../Main/index.html" id="renzotext">
+            <p id="logotext" onclick="homefunction()">𝙧𝙚𝙣𝙯𝙤𝙗𝙡𝙚𝙣𝙙𝙯</p>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../Home/Home.html#AboutSection">About</a></li>
+                <li><a href="../Services/services.html">Services</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div id="ContactHeader">CONTACT US</div>
+    </div>
+
+    <div id="ContactInfo">
+
+        <img src="../Images/WhiteLogo.png" height="200px" id="Logoimage">
+
+        <div id="OpenHours">
+            <div id="Phoneid"><b>+61 491 623 147</b></div>
+
+            
+
+            <div id="WorkHrs">Working Hours</div>
+
+            <div id="WorkLine"></div>
+
+            <div class="Hours">
+                <p class="openhourstext"><b>MON-FRI</b>.............Closed</p>
+                <p class="openhourstext"><b>SAT-SUN</b>.............9AM - 3PM</p>
+            </div>
+
+            <div class="HolidayHours">
+                <div id="WorkHrs">School Holiday Hours</div>
+
+                <div id="WorkLine"></div>
+    
+                <div class="Hours">
+                    <p class="openhourstext"><b>MON-FRI</b>.............9AM - 3PM</p>
+                    <p class="openhourstext"><b>SAT-SUN</b>.............9AM - 3PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ReachUs">
+        <p id="intouch">Get In Touch</p>
+
+        <div id="MessageFrame">
+        <form action= "https://api.web3forms.com/submit" method="POST">
+            <!-- <input type="hidden" name="access_key" value="ec6bcf35-eb80-42e9-b2cc-adbc9facf103"> -->
+            <input type="hidden" name="access_key" value="102ba84b-1d71-44f6-a179-f00fc14af9f4">
+            <input name = "name" id="NameInput" placeholder="Name" required>
+            <input name = "email" id="EmailInput" placeholder="Email" required>
+            <input name = "Message" id="MessageInput" placeholder="Send Message"></input required>
+            <button id="Submit">Submit</button>
+        </form>
+    </div>
+<script src="contact.js"></script>
+</html>
