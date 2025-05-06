@@ -358,6 +358,37 @@ body , html{
     width: 50%;
 }
 
+@media (max-width: 1280px) {
+    #AboutID {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    #AboutID {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #AboutID {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 640px) {
+    #AboutID {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #AboutSection {
+        font-size: 3vw;
+    }
+}
+
+
 
 #AboutUsText {
     position: absolute; /* or static */
@@ -515,7 +546,7 @@ body , html{
     /* position: relative; */
     height: auto;
     bottom: 0vh;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #GalleryP {
